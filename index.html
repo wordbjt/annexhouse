@@ -42,10 +42,14 @@ h1 {
    width: 100%; 
   }
   
-  .description {
+  .address {
   left: 50%;
   top: 15px;;
-  position: absolute;  
+  position: absolute; 
+}
+	
+  .description {
+  
   }
   
   .coming-soon {
@@ -63,6 +67,11 @@ h1 {
    float: right;
   }
   
+  .upsidedown-text {
+	transform: rotate(180deg);
+	transform-origin: left top 0;
+}	
+	
   .vertical-text-left {
 	transform: rotate(90deg);
 	transform-origin: left top 0;
@@ -85,7 +94,9 @@ h1 {
   
 <div id="site-logo"><img src="https://raw.githubusercontent.com/wordbjt/thecourtyard/master/images/the_courtyard_logo_black.png"></div>
 
-<p class="coming-soon vertical-text-right">Coming Soon to Poblacion, Makati.</p>
+<p class="address upsidedown-text">5856 Alfonso St. / Makati</p>
+	
+<p class="coming-soon vertical-text-right">Coming Soon to Poblacion.</p>
 
 <h3 class="description slant-text">{ Food ~ Drinks ~ Fashion ~ Music ~ Art }</h3> 
   
