@@ -42,6 +42,10 @@ h1 {
    width: 100%; 
   }
   
+  .description {
+    
+  }
+  
   .coming-soon {
     margin-top: 50px;
   }
@@ -50,7 +54,13 @@ h1 {
    font-size: 10px; 
    position: absolute;
    bottom: 50px;
+   float: right;
   }
+  
+  .vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+}
   
 </style>
 </head>
@@ -58,10 +68,10 @@ h1 {
 <body>
   
 <div id="site-logo"><img src="https://raw.githubusercontent.com/wordbjt/thecourtyard/master/images/the_courtyard_logo_black.png"></div>
-<h3>{ Food ~ Drinks ~ Fashion ~ Music ~ Art }</h3> 
-<p class="coming-soon">Coming Soon to Poblacion, Makati.</p>
+<h3 class="description">{ Food ~ Drinks ~ Fashion ~ Music ~ Art }</h3> 
+<p class="coming-soon vertical-text">Coming Soon to Poblacion, Makati.</p>
   
-<a class="contact" href="mailto:contact@thecourtyardmanila.com">contact@thecourtyardmanila.com</a>
+<a class="contact vertical-text" href="mailto:contact@thecourtyardmanila.com">contact@thecourtyardmanila.com</a>
   
 </body>
   
