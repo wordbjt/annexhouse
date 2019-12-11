@@ -255,26 +255,6 @@ border-radius: 0;
 	    }
 	    
     </style>
-
-<script>
-// select the target node
-var target = document.getElementById('mce-success-response');
-
-// create an observer instance
-var observer = new MutationObserver(function(mutations) {
-  mutations.forEach(function(mutation) {
-    if (target.innerHTML === "Thank you for subscribing!") {
-      target.innerHTML = "Thank you!";
-    }
-  });
-});
-
-// configuration of the observer:
-var config = { attributes: true, childList: true, characterData: true };
-
-// pass in the target node, as well as the observer options
-observer.observe(target, config);
-</script>
 	
 </head>
     
@@ -338,7 +318,10 @@ observer.observe(target, config);
 		 <p class="form-title">Please confirm your attendance using the RSVP form below.</p>
 		    
                 <form action="https://annex-house.us4.list-manage.com/subscribe/post?u=19e8f5197817f7a3d4bd497f2&amp;id=07b1f964f6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-
+	    
+	<!-- START HIDE FORM -->
+             <div id="mc_hide_on_submit">
+		     
                     <div style="position: absolute; left: -5000px;" aria-hidden="true">
                         <input type="text" name="b_f7fcffd059cde2df667ed71e0_b59497a580" tabindex="-1" value="">
                     </div>
@@ -364,9 +347,11 @@ observer.observe(target, config);
                         </div>
                     </div>
 
+		</div> <!-- END HIDE FORM -->
+		     
                     <div id="mce-responses">
                         <div class="response text-warning" id="mce-error-response" style="display:none"></div>
-                        <div class="response text-success" id="mce-success-response" style="display:none">Thanks! We'll be in touch to confirm your RSVP.</div>
+                        <div class="response text-success" id="mce-success-response" style="display:none"></div>
                     </div>
 
                 </form>
@@ -375,6 +360,24 @@ observer.observe(target, config);
         </div>
     </div>
 
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+	
+<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));
+//var $mcj = jQuery.noConflict(true);
+</script>
+	
+<script>
+    $(function(){
+        //$("#mcm_hide_on_submit").hide();
+        $(".button").on("click", function(){
+            if ( $('#mce-success-response:visible') ) {
+                console.log('Successfully signed up');
+                $('#mc_hide_on_submit').hide();
+                $('#mce-success-response').css('margin', "0");
+            }
+        });
+    }); 
+</script>
+	
 </body>
 </html>
