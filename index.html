@@ -119,7 +119,23 @@ margin-top: 12%;
 #additional-text-wrapper h2 {
 font-size: 15px;
 color: #000;
+}
+	
+#additional-text-wrapper h2  {
+  display: block; /* Important to give the content a width */
+
+  width: 100%;
+  transform: translateX(100%); /* Animation start out of the screen */
+
+  /* Add the animation */
+  animation: move 30s linear infinite /* infinite make reapeat the animation indefinitely */;
+}
+
+/* Create the animation */
+@keyframes move {
+  to { transform: translateX(-100%); }
 }	
+	
 	
 #description-text-wrapper h3.description-text {
 /*background-color: #FFFFFF;*/
@@ -219,7 +235,7 @@ position: absolute;*/
 }
 	
 #description-text-wrapper h2 {
-font-size: 18px;
+font-size: 17px;
 color: #000;
 }
 	
