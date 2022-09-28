@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<title>Members Only! Vol.2</title>
+    
+<meta name="description" content="A restored, post-war Filipino house celebrating the intersection of art, fashion, music, performance, craftsmanship, culinary arts & mixology. Located in Poblacion.">
+<meta property="og:title" content="Annex House - Poblacion, Makati"/>
+<meta property="og:image" content="https://raw.githubusercontent.com/wordbjt/thecourtyard/master/images/annex_house_fb_share.jpg"/>
+<meta property="og:site_name" content="Annex House - Poblacion, Makati"/>
+<meta property="og:description" content="A restored, post-war Filipino house celebrating the intersection of art, fashion, music, performance, craftsmanship, culinary arts & mixology. Located in Poblacion."/>
+<meta property="og:url" content="http://annex-house.com"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700|Montserrat:400,400i,700|Playfair+Display:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+	  
+	 #heading h1.main-title {
+         font-size: 32px;
+	 clear: both;
+         margin-bottom: 10px;
+	    }
+	    
+	 .bg-image-container {
+	 display: none;	 
+	 }
+
+ @media only screen and (min-width: 681px) { 
+	 
+	 #heading h1.sub-title {
+         color: #000;
+	 font-size: 23px;
+	 background-color: #FFF;
+	 }
+	 
+	.mobile-background {
+		background-image: url("https://raw.githubusercontent.com/wordbjt/annexhouse/master/images/invite-only.jpg");
+		background-color: rgba(255,255,255, 0.1);
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-position: center center;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+                opacity: 0.1;
+	    }
+}	    
+	    
+ @media only screen and (max-width: 680px) {
+	 
+	 #heading h1 {
+	 font-size: 29px;	 
+	 }
+	 
+	 #heading h1.sub-title {
+         color: #000;		 
+	 font-size: 21px;
+	 background-color: #FFF;
+	 }	
+	 
+	.mobile-background {
+		background-image: url("https://raw.githubusercontent.com/wordbjt/annexhouse/master/images/invite-only.jpg");
+		background-color: rgba(255,255,255, 0.1);
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-position: center center;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+                opacity: 0.1;
+	    }
+}
+	    
+	h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 28px;
+	/*letter-spacing: 1px;*/
+	margin-top: 15px;
+        margin-bottom: 15px;
+	    }
+	    
+	h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;	
+	font-size: 16px;
+	background-color: #f1b638;
+	margin-top: 10px;
+        margin-bottom: 5px;		
+        display: inline-block;
+	    }
+	    
+	h3 {
+	font-family: 'Amiri', serif;
+	font-size: 14px;
+	font-style: italic;
+	margin-top: 5px;
+        margin-bottom: 5px;	
+	    }
+	    
+	p {
+	font-family: 'Amiri', serif;
+	font-size: 14px;
+	  }
+	    
+	p.small {
+	font-family: 'Amiri', serif;
+	font-size: 13px;
+	  }    
+	    
+	#heading {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 5px;
+	margin-top: 50px;
+	margin-bottom: 45px;  
+	    }	
+	
+	#heading h1 {
+	color: #FFF;
+	background-color: #000;
+	display: inline-block;
+	    }
+	    
+	#main-text p {
+	font-family: 'Amiri', serif;
+	font-size: 18px;
+	text-align: center;
+	  }
+	 
+	#main-text h1 {
+	font-family: 'Amiri', serif;
+	text-align: center;
+	  }    
+	    
+	#other-text p {
+	font-size: 18px;
+	/ *line-height: 1.2em; */	
+        text-align: center;
+	  }  
+	    
+	#additional-text p {
+	font-family: 'Amiri', serif;
+	font-size: 14px;
+	  }    
+	    
+	#additional-text p.small {
+	font-family: 'Amiri', serif;
+	font-size: 12px;
+	  }     
+	    
+        div.mce_inline_error {
+            color: red;
+	    font-size: 11px;
+        }
+	    
+	#other-text {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	}
+	    
+	#details-text {
+	text-align: center;	
+	margin-top: 5px;
+	margin-bottom: 5px;
+	    }
+	 
+	#additional-text {
+	text-align: center;	
+        margin-top: 5px;
+        margin-bottom: 5px;
+	    }
+   
+	#other-text p.please-note {
+	margin-top: 10px;
+	color: red;
+	font-size: 11px;
+	font-style: italic;
+	    }
+	    
+	#additional-text p.small {   
+	margin-bottom: 0px;
+	    }
+	    
+	  
+	#additional-text p.talent {
+	color: #FFF;
+	background-color: #000;
+	line-height: 1.1em;	
+	margin-bottom: 15px;
+	display: inline-block;
+	    }
+	    
+	#rsvp-form {
+	font-family: 'Amiri', serif;
+	font-size: 16px;
+	text-align: center;
+	padding: 30px;
+	margin-top: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	margin-left: 25px;
+	border: 1px solid #000;
+	display: block;
+	    }	
+	 
+	#rsvp-form .form-title {
+	font-family: 'Amiri', serif;
+	font-size: 18px;
+	margin-bottom: 25px;
+	    }
+	    
+	#rsvp-form  label { 
+	font-size: 14px;
+	margin-bottom: 0px;
+	display: block;
+	    }
+	    
+        #rsvp-form .input-group {
+	display: block;
+	    }
+	    
+	#rsvp-form input {
+        font-size: inherit;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border: 1px solid #000;
+	-webkit-appearance: none;
+	    }  
+	    
+	#rsvp-form input
+	#rsvp-form textarea,
+        #rsvp-form input.text,
+        #rsvp-form input[type="text"] {
+        font-size: 16px;
+	padding: 3px 10px;
+	 -webkit-box-shadow: none;
+         -moz-box-shadow: none;
+          box-shadow: none;	
+	    }
+	    
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+-webkit-appearance: none;
+border-radius: 0;
+}
+	    
+	#rsvp-form .form-control {
+	border-radius: 0px;	
+	    }
+	    
+	#rsvp-form .btn {
+	color: #FFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	background-color: #000;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #000;
+	border-radius: 0;
+	display: block;	
+	    }
+	    
+	#rsvp-form .btn:hover {
+	opacity: 0.8;	
+	}
+	    
+	.response.text-success {
+	font-family: 'Amiri', serif;
+	font-size: 8px;
+	color: #FFF;
+	opacity: 0;
+	    }
+	    
+	   
+	.bg-white {
+		/*background-color: #FFF;*/
+	    }
+	    
+	.bg-image-container {
+           position: relative;
+           /*overflow: hidden;*/
+	}
+	
+	 .bg-image-container img {
+    		position: absolute;
+    		left: 0;
+    		top: 0;
+    		width: 100%;
+    		height: auto;
+    		opacity: 0.1;
+	}
+	    
+	    #break {
+		border-top: 1px solid #eee;  
+		margin-bottom: 25px;
+	    }
+	    
+	    .large-font {
+		font-size: 24px;
+		color: #000;
+	    }
+	    
+	    #rsvp-form {
+		display: none;    
+	    }
+	    
+	    #rsvp-closed {
+		text-align: center;  
+		margin-bottom: 75px;
+	    }
+	    
+    </style>
+	
+</head>
+    
+<body>
+	
+<div class="bg-image-container">
+    <img src="https://raw.githubusercontent.com/wordbjt/annexhouse/master/images/invite-only.jpg">
+</div>
+
+<div class="mobile-background"></div>
+	
+    <div class="container">
+        <div class="row">
+		
+	<div id="heading" class="col-sm-6 col-sm-offset-3 bg-white">
+		<h3>December 20th, 2019</h3>
+		<h1 class="main-title">{Members Only Party! Vol. 2}</h1>
+		<div style="clear:both;"></div>
+		<h1 class="sub-title">~ Holiday Party Open Bar Edition ~</h1>
+		<div style="clear:both;"></div>		
+		<h2>@ Annex House + MASS</h2>
+	</div>
+		
+	<div id="main-text" class="col-sm-6 col-sm-offset-3 bg-white">
+		<h1>-</h1>
+		<p>Invite Only! is a series of private events, pop-ups and more, strictly for our loyal friends and family of Annex House / the workshop.</p>
+		<p>Our first Invite Only! is a simple, one (1) hour, no frills open bar during our annual holiday party.</p>
+		<h1>-</h1>
+	</div>
+		
+	<div id="details-text" class="col-sm-6 col-sm-offset-3 bg-white">	
+		<p>When: Saturday - September 8th, 2022 | 9:00PM until late</p>
+		<p>Where: The Family Room & Bar @ Annex House</p>
+		<p>What: Open bar on all cocktails, beer and shots, free snacks, familiar faces and music by Mafia</p>
+	</div>
+		
+	<div id="other-text" class="col-sm-6 col-sm-offset-3 bg-white">	
+		<p class="please-note">Members only... no plus-ones are allowed.</p>
+	</div>
+
+	<div id="break" class="col-sm-6 col-sm-offset-3 bg-white"></div>
+		
+	<div id="additional-text" class="col-sm-6 col-sm-offset-3 bg-white">	
+		
+		<p><strong>Make sure you stick around for the rest of our holiday party festivities, including... </strong></p>
+		<br>
+		<p class="small">Live performance by...</p>
+		<p class="talent">La Crema</p>
+		<br>
+		<p class="small">DJ set by...</p>
+		<p class="talent">Filter Cha</p>
+		<br><br>
+		<p><strong>***After Hours Karaoke Party***</strong></p>
+		<p class="small">Hosted by RJ Santos and Jon Franks</p>
+		<br>
+		<p>+ prizes, giveaways and more!</p>
+
+	</div>
+
+	<div class="col-sm-6 col-sm-offset-3 bg-white">
+	<h1 id="rsvp-closed">RSVP is now closed. See you tonight!</h1>
+	</div>
+		
+           
+            <div class="col-sm-6 col-sm-offset-3 bg-white">
+	    <!-- Start RSVP Form -->
+	     <div id="rsvp-form">
+		 <p class="form-title">Please confirm your attendance using the RSVP form below.</p>
+		    
+                <form action="https://annex-house.us4.list-manage.com/subscribe/post?u=19e8f5197817f7a3d4bd497f2&amp;id=07b1f964f6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	    
+	<!-- START HIDE FORM -->
+             <div id="mc_hide_on_submit">
+		     
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_f7fcffd059cde2df667ed71e0_b59497a580" tabindex="-1" value="">
+                    </div>
+
+<div class="mc-field-group">
+	<label for="mce-FNAME">First Name: </label>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-LNAME">Last Name: </label>
+	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+                    
+                    <div class="mc-field-group">
+                        <div class="form-group">
+                            <label for="mce-EMAIL">Email Address:</label>
+                            <div class="input-group">
+                                <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">RSVP</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+		</div> <!-- END HIDE FORM -->
+			
+	   	<div id="thanks-message" style="display:none">
+			<p class="large-font">Thanks! We'll confirm your RSVP shortly.</p>
+		</div>
+			
+                    <div id="mce-responses">
+                        <div class="response text-warning" id="mce-error-response" style="display:none"></div>
+                        <div class="response text-success" id="mce-success-response" style="display:none"></div>
+                    </div>
+
+                </form>
+		</div><!-- End RSVP Form -->
+            </div>
+        </div>
+    </div>
+
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+	
+<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));
+//var $mcj = jQuery.noConflict(true);
+</script>
+	
+<script>
+    $(function(){
+        //$("#mcm_hide_on_submit").hide();
+        $("#rsvp-form .btn").on("click", function(){
+            if ( $('#mce-success-response:visible') ) {
+                console.log('Successfully signed up');
+                $('#mc_hide_on_submit').hide();
+		$('.form-title').hide();
+		$('#thanks-message').show();    
+                $('#mce-success-response').css('margin', "0");
+            }
+        });
+    }); 
+</script>
+	
+</body>
+</html>
